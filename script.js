@@ -11,7 +11,7 @@ function playGame(){
     }
 
     function getHumanChoice() {
-        const userInput = prompt("Enter your choice: rock, paper, or scissors");
+        const userInput = prompt("Enter your choice: rock, paper, or scissors \nOpen console tab to check the final score");
         return userInput.toLowerCase();
     }
 
@@ -42,11 +42,11 @@ function playGame(){
     console.log("humanscore:",humanScore);
     console.log("computerScore:",computerScore);
     if(humanScore>computerScore){
-        console.log( "You won the game");
+        alert( "You won the game");
     }else if(humanScore<computerScore){
-        console.log("Computer won the game");
+        alert("Computer won the game");
     }else {
-        console.log("its a tie");
+        alert("its a tie");
     }
 }
 playGame();
